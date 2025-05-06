@@ -10,14 +10,13 @@ $person = array("name" => "John", "age" => 30, "city" => "New York");
 
 
 echo "<h3>Multidimensional Array (Arrays within Arrays)</h3>";
+
 $users = array(
-    array("name" => "Alice", "email" => "alice@example.com");
-    array("name" => "Bob", "email" => "bob@example.com");
+    array("name" => "Alice", "email" => "alice@example.com"),
+    array("name" => "Bob", "email" => "bob@example.com")
 );
 
-    echo "<h3>Multidimensional Array (Arrays within Arrays)</h3>";
-
-   echo "<h3>Using array() function</h3>";
+   echo "<h3>Using array function</h3>";
 
     $fruits = array("apple", "banana", "cherry");
 
