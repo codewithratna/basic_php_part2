@@ -37,17 +37,34 @@ echo "<h3>Indexed Array Numerical Keys</h3>";
 
      unset($name3);
 
-     Function	
-count($name)	                  //মোট কয়টা item আছে
-array_values($name)	             //শুধু values return করে
-array_keys($name)	            //index/key গুলো return করে
-in_array("munia", $name)	    //munia আছে কিনা check করে
-array_key_exists(1, $name)      //index/key 1 আছে কিনা check করে
+     //Function	
+count($name);             //মোট কয়টা item আছে
+array_values($name);            //শুধু values return করে
+array_keys($name);            //index/key গুলো return করে
+in_array("munia", $name);	    //munia আছে কিনা check করে
+array_key_exists(1, $name);      //index/key 1 আছে কিনা check করে
     
 
+//kivabe loop kore sob item show korano jay
+//simple foreach with indexed array
+/*foreache ($name as $names) {
+    echo $names . "<br>";  eta error astache 
+}*/
 
+//associative array
+$team = ["name" => "Nazmul", "age" => 26];
+    foreach ($team as $key => $value) {
 
+        echo "$key: $value <br>";
+    }
 
+//Associative array mane nijer  moto kore key dewa
+$person = array(
+    "name" => "Masud",
+    "age" => 25,
+    "team" => "Own"
+);
 
+echo $person["name"]; //Masud
     
 ?>
